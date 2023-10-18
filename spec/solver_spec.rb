@@ -20,6 +20,7 @@ RSpec.describe Solver do
     it 'returns the reversed string' do
       expect(Solver.reverse('hello')).to eq('olleh')
       expect(Solver.reverse('ruby')).to eq('ybur')
+      expect(Solver.reverse('racecar')).to eq('racecar')
     end
   end
 
