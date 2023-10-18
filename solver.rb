@@ -1,5 +1,5 @@
 class Solver
-  def self.factorial(n)
+  def self.factorial(num)
     raise ArgumentError, 'Input must be a non-negative integer' if n.negative?
 
     result = 1
@@ -11,7 +11,7 @@ class Solver
     word.reverse
   end
 
-  def self.fizzbuzz(n)
+  def self.fizzbuzz(num)
     if (n % 3).zero? && (n % 5).zero?
       'fizzbuzz'
     elsif (n % 3).zero?
