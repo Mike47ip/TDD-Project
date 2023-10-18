@@ -1,8 +1,6 @@
 class Solver
   def self.factorial(n)
-    if n < 0
-      raise ArgumentError, 'Input must be a non-negative integer'
-    end
+    raise ArgumentError, 'Input must be a non-negative integer' if n.negative?
 
     result = 1
     (1..n).each { |i| result *= i }
@@ -14,14 +12,14 @@ class Solver
   end
 
   def self.fizzbuzz(n)
-    if n % 3 == 0 && n % 5 == 0
-      return 'fizzbuzz'
-    elsif n % 3 == 0
-      return 'fizz'
-    elsif n % 5 == 0
-      return 'buzz'
+    if (n % 3).zero? && (n % 5).zero?
+      'fizzbuzz'
+    elsif (n % 3).zero?
+      'fizz'
+    elsif (n % 5).zero?
+      'buzz'
     else
-      return n.to_s
+      n.to_s
     end
   end
 end
