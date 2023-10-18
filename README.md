@@ -29,7 +29,7 @@
 
 # 📖 [TDD-Project] <a name="about-project"></a>
 
-**[TDD Project]** is a school library app.
+**[TDD Project]** is a ruby written app to test some popular problems like factorial, reversing a string and fizzbuzz. The key feature is that in this project the rspec unit tests are written prior to the writing of the solver functions. This method of writing a code is called TDD. Hence the project name is TDD-Project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
